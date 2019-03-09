@@ -1598,6 +1598,10 @@ pre.oppia-pre-wrapped-text {
 .oppia-editable-section:hover .oppia-interaction-preview {
   background: rgba(5, 140, 166, 0.5);
   border-radius: 4px;
+  /* The z-index value of leaflet map zoom control is 1000, to make it go lower
+     in stack we have used 1001.
+  */
+  z-index: 1001;
 }
 
 .oppia-editor-edit-icon {
@@ -2910,7 +2914,7 @@ md-card.preview-conversation-skin-supplemental-card {
   text-align: center;
 }
 .oppia-splash-bullet-block {
-  font-family: "Rubik", "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 1.17em;
   line-height: 128%;
   margin-bottom: 10px;
@@ -3249,7 +3253,7 @@ md-card.preview-conversation-skin-supplemental-card {
 }
 .oppia-activity-summary-tile .objective {
   display: -webkit-box;
-  font-family: "Rubik", "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 0.85em;
   height: 70px;
   line-height: 1.26;
@@ -3270,7 +3274,7 @@ md-card.preview-conversation-skin-supplemental-card {
 
 .oppia-activity-summary-tile-mobile .objective {
   height: 75px;
-  font-family: "Rubik", "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 0.85em;
   padding: 12px;
 }
